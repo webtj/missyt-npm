@@ -1,0 +1,29 @@
+{
+  "name": "missyt-npm",
+  "version": "0.0.0",
+  "description": "A command-line tool for quickly switching npm warehouse addresses",
+  "main": "index.js",
+  "bin": {
+    "prm": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtj/missyt-npm.git"
+  },
+  "keywords": [
+    "missyt",
+    "npm",
+    "nrm",
+    "cli",
+    "missyt-npm"
+  ],
+  "author": "taojian <taojian@petalmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webtj/missyt-npm/issues"
+  },
+  "homepage": "https://github.com/webtj/missyt-npm#readme"
+}
