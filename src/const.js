@@ -1,33 +1,33 @@
 const registryList = [
   {
-    value: "npm",
     label: "npm",
-    url: "https://registry.npmjs.org/",
+    home: "https://www.npmjs.com/",
+    registry: "https://registry.npmjs.org/",
   },
   {
-    value: "yarn",
     label: "yarn",
-    url: "https://registry.yarnpkg.com/",
+    home: "https://yarnpkg.com/",
+    registry: "https://registry.yarnpkg.com/",
   },
   {
-    value: "tencent",
     label: "tencent",
-    url: "https://mirrors.cloud.tencent.com/npm/",
+    home: "https://mirrors.cloud.tencent.com/",
+    registry: "https://mirrors.cloud.tencent.com/npm/",
   },
   {
-    value: "cnpm",
     label: "cnpm",
-    url: "https://r.cnpmjs.org/",
+    home: "https://cnpmjs.org/",
+    registry: "https://r.cnpmjs.org/",
   },
   {
-    value: "taobao",
     label: "taobao",
-    url: "https://registry.npmmirror.com/",
+    home: "https://npm.taobao.org/",
+    registry: "https://registry.npmmirror.com/",
   },
   {
-    value: "npmMirror",
     label: "npmMirror",
-    url: "https://skimdb.npmjs.com/registry/",
+    home: "https://npm.mirror.cqupt.edu.cn/",
+    registry: "https://skimdb.npmjs.com/registry/",
   },
 ];
 

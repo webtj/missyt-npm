@@ -25,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/webtj/missyt-npm/issues"
   },
-  "homepage": "https://github.com/webtj/missyt-npm#readme"
+  "homepage": "https://github.com/webtj/missyt-npm#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "figlet": "^1.5.2",
+    "ini": "^3.0.1",
+    "request": "^2.88.2"
+  }
 }

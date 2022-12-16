@@ -1,5 +1,8 @@
 const chalk = require("chalk");
 const { textSync } = require("figlet");
+const ini = require("ini");
+const fs = require("fs");
+
 //展示项目logo
 const showLogo = (logoName) => {
   return chalk.green(textSync(logoName, { horizontalLayout: "full" }));
@@ -17,6 +20,32 @@ const log = {
   default: (...msg) => console.log(chalk.white(...msg)),
 };
 
+async function readFile(file) {
+  return new Promise((resolve) => {
+    if (!fs.existsSync(file)) {
+      resolve({});
+    } else {
+      try {
+        const content = ini.parse(fs.readFileSync(file, "utf-8"));
+        resolve(content);
+      } catch (error) {
+        exit(error);
+      }
+    }
+  });
+}
+
+async function writeFile(path, content) {
+  return new Promise((resolve) => {
+    try {
+      fs.writeFileSync(path, ini.stringify(content));
+      resolve();
+    } catch (error) {
+      exit(error);
+    }
+  });
+}
+
 module.exports = {
   showLogo,
   log,
@@ -26,4 +55,6 @@ module.exports = {
   infoColor: chalk.blue,
   magentaColor: chalk.magenta,
   underlineColor: chalk.underline.blueBright.bold,
+  readFile,
+  writeFile,
 };
