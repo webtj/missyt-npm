@@ -1,6 +1,6 @@
 {
   "name": "missyt-npm",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A command-line tool for quickly switching npm warehouse addresses",
   "main": "index.js",
   "bin": {
@@ -19,6 +19,14 @@
     "nrm",
     "cli",
     "missyt-npm"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "index.js",
+    "package.json",
+    "README.md",
+    "LICENSE"  
   ],
   "author": "taojian <taojian@petalmail.com>",
   "license": "MIT",
