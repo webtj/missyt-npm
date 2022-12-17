@@ -1,1 +1,5 @@
 node_modules
+.DS_Store
+.vscode/extensions.json
+.vscode/launch.json
+package-lock.json

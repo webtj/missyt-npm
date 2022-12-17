@@ -1,35 +1,29 @@
-const registryList = [
-  {
-    label: "npm",
+const registryList = {
+  npm: {
     home: "https://www.npmjs.com/",
     registry: "https://registry.npmjs.org/",
   },
-  {
-    label: "yarn",
+  yarn: {
     home: "https://yarnpkg.com/",
     registry: "https://registry.yarnpkg.com/",
   },
-  {
-    label: "tencent",
+  tencent: {
     home: "https://mirrors.cloud.tencent.com/",
     registry: "https://mirrors.cloud.tencent.com/npm/",
   },
-  {
-    label: "cnpm",
+  cnpm: {
     home: "https://cnpmjs.org/",
     registry: "https://r.cnpmjs.org/",
   },
-  {
-    label: "taobao",
+  taobao: {
     home: "https://npm.taobao.org/",
     registry: "https://registry.npmmirror.com/",
   },
-  {
-    label: "npmMirror",
+  npmMirror: {
     home: "https://npm.mirror.cqupt.edu.cn/",
     registry: "https://skimdb.npmjs.com/registry/",
   },
-];
+};
 
 module.exports = {
   registryList,

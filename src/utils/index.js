@@ -20,22 +20,25 @@ const log = {
   default: (...msg) => console.log(chalk.white(...msg)),
 };
 
-async function readFile(file) {
+async function readNpmFile(file) {
   return new Promise((resolve) => {
     if (!fs.existsSync(file)) {
       resolve({});
     } else {
       try {
-        const content = ini.parse(fs.readFileSync(file, "utf-8"));
-        resolve(content);
+        const content = JSON.stringify(
+          ini.parse(fs.readFileSync(file, "utf-8"))
+        );
+        resolve(JSON.parse(content));
       } catch (error) {
-        exit(error);
+        log.error(error);
+        process.exit(1);
       }
     }
   });
 }
 
-async function writeFile(path, content) {
+async function writeNpmFile(path, content) {
   return new Promise((resolve) => {
     try {
       fs.writeFileSync(path, ini.stringify(content));
@@ -55,6 +58,6 @@ module.exports = {
   infoColor: chalk.blue,
   magentaColor: chalk.magenta,
   underlineColor: chalk.underline.blueBright.bold,
-  readFile,
-  writeFile,
+  readNpmFile,
+  writeNpmFile,
 };
