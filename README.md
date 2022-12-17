@@ -28,16 +28,16 @@ prm use taobao
 
 ### 增加npm源
 参数：
-    - name 源的名称，例如:taobao
-    - registryUrl 源地址 例如:https://registry.npmmirror.com/
-    - homeUrl 主页地址，非必须 例如：https://npm.taobao.org/
+  - name 源的名称，例如:taobao
+  - registryUrl 源地址 例如:https://registry.npmmirror.com/
+  - homeUrl 主页地址，非必须 例如：https://npm.taobao.org/
 ```shell
 prm add <name> <registryUrl> <homeUrl>
 ```
 
 ### 删除某个源
 参数:
-    - name 待删除的源名称
+  - name 待删除的源名称
 ```shell
 prm del taobao
 ```
